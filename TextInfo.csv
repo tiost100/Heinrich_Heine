@@ -1,14 +1,15 @@
 id;autor;jahr;genre;titel
 0;Heinrich Heine;1821;Lyrik;Almansor
 1;Heinrich Heine;1824;Lyrik;Die Harzreise
-2;Heinrich Heine;1827;Lyrik;Buch der Lieder
-3;Heinrich Heine;1827;Prosa;Buch der Lieder
-4;Heinrich Heine;1832;Prosa;Französische Zustände
-5;Heinrich Heine;1844;Lyrik;Deutschland - Ein Wintermärchen
-6;Heinrich Heine;1844;Prosa;Deutschland - Ein Wintermärchen
-7;E.T.A. Hoffmann;1817;Prosa;Nachtstücke
-8;E.T.A. Hoffmann;1819;Prosa;Der goldene Topf
-9;E.T.A. Hoffmann;1819;Prosa;Kein Zaches, genannt Zinnober - Ein Märchen
-10;J.W. von Goethe;1774;Prosa;Die Leiden des jungen Werthers
-11;J.W. von Goethe;1809;Lyrik;Die Wahlverwandtschaften
-12;Theodor Storm;1874;Lyrik;Waldwinkel
+2;Heinrich Heine;1824;Prosa;Die Harzreise
+3;Heinrich Heine;1827;Lyrik;Buch der Lieder
+4;Heinrich Heine;1827;Prosa;Buch der Lieder
+5;Heinrich Heine;1832;Prosa;Französische Zustände
+6;Heinrich Heine;1844;Lyrik;Deutschland - Ein Wintermärchen
+7;Heinrich Heine;1844;Prosa;Deutschland - Ein Wintermärchen
+8;E.T.A. Hoffmann;1817;Prosa;Nachtstücke
+9;E.T.A. Hoffmann;1819;Prosa;Der goldene Topf
+10;E.T.A. Hoffmann;1819;Prosa;Kein Zaches, genannt Zinnober - Ein Märchen
+11;J.W. von Goethe;1774;Prosa;Die Leiden des jungen Werthers
+12;J.W. von Goethe;1809;Lyrik;Die Wahlverwandtschaften
+13;Theodor Storm;1874;Lyrik;Waldwinkel
