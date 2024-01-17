@@ -66,4 +66,50 @@ def createCorpus(filepath):
             with open(f"{dir_path}/Corpus.csv", "a", encoding="utf-8") as outfile:
                 outfile.write(f"{int(text_nr) + 1}-{id};{sentence};{'verschieden'};{2011};{'verschieden'};{'Leipzig Corpus'}\n")
 
+
+def createTestData(filepath):
+    """Create test data from the ChatGPT.txt-file
+
+    args: filepath (string, full path of the location of the files)
+
+    return: none
+
+    note: the file path depends on the storage location of the file on the 
+    computer, and can vary from computer to computer
+    """
+
+    # open the ChatGPT.txt-file with all the information about every text
+    with open(filepath + "/ChatGPT.txt", encoding = "utf-8") as infile:
+        data = infile.read()
+
+    texts = data.split("----------------------------------------------------------------------------------------------------------------------")
+    text_nr = 0
+
+    for t in texts:
+        titel_text = t.split(":")
+
+        titel = titel_text[0].strip()
+        text = titel_text[1]
+        sentences = re.split(r'[.!?]', text)
+
+        sentence_nr = 0
+
+        with open(f"{dir_path}/TestData.csv", "a", encoding="utf-8") as outfile:
+            for s in sentences:
+                if s.strip():
+                    s = re.sub("\n", " ", s)
+                    genre = ""
+
+                    if "Gedicht" in titel:
+                        genre = "Lyrik"
+                    else:
+                        genre = "Prosa"
+                    
+                    outfile.write(f"{text_nr}-{sentence_nr};{s.strip()};{'ChatGPT'};{'2023'};{genre};{titel}\n")
+                
+                sentence_nr += 1
+
+            text_nr += 1
+
 createCorpus(dir_path)
+createTestData(dir_path)
