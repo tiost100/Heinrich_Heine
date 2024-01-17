@@ -18,6 +18,8 @@ def createCorpus(filepath):
     computer, and can vary from computer to computer
     """
 
+    text_nr = 0
+
     # open the textinfo.csv-file with all the information about every text
     with open(filepath + "/textinfo.csv") as csvfile:
         csv_reader_object = csv.reader(csvfile, delimiter=";")
@@ -37,10 +39,12 @@ def createCorpus(filepath):
                             text += line.strip("\n") + " "
 
                     text = re.sub(";", ",", text)
+                    text = re.sub("=", "", text)
+                    text = re.sub("_", "", text)
 
                 # split the text into sentences
-                sentences = text.split(".")
-                sentences = sentences[:-1]
+                sentences = re.split(r'[.!?]', text)
+                sentences = [sentence.strip() for sentence in sentences if sentence.strip()]
                 sentences_nr = len(sentences)
 
                 # write the sentence ID (text ID & number of sentence), text, author, year, genre, source into the corpus
@@ -48,5 +52,18 @@ def createCorpus(filepath):
                     for i in range(sentences_nr):
                         outfile.write(f"{text_nr}-{i};{sentences[i].strip()};{row[1]};{row[2]};{row[3]};{row[4]}\n")
             row_nr += 1
+
+    # open the deu_mixed-typical_2011_10K-sentences.txt-file containing the mixed type Leipzig Corpus from 2011
+    with open(filepath + "/deu_mixed-typical_2011_10K-sentences.txt") as infile:
+        # go through each row in the .txt-file
+        for line in infile:
+            # split every line in id and text
+            id_sentence = line.split("\t")
+            id = int(id_sentence[0]) - 1
+            sentence = id_sentence[1].strip()
+
+            # write the sentence ID (text ID & number of sentence), text, author, year, genre, source into the corpus
+            with open(f"{dir_path}/Corpus.csv", "a", encoding="utf-8") as outfile:
+                outfile.write(f"{int(text_nr) + 1}-{id};{sentence};{'verschieden'};{2011};{'verschieden'};{'Leipzig Corpus'}\n")
 
 createCorpus(dir_path)
