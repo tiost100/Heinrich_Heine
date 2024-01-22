@@ -54,7 +54,7 @@ def createCorpus(filepath):
             row_nr += 1
 
     # open the deu_mixed-typical_2011_10K-sentences.txt-file containing the mixed type Leipzig Corpus from 2011
-    with open(filepath + "/deu_mixed-typical_2011_10K-sentences.txt") as infile:
+    with open(filepath + "/deu_mixed-typical_2011_10K-sentences.txt", "r", encoding="utf-8") as infile:
         # go through each row in the .txt-file
         for line in infile:
             # split every line in id and text
