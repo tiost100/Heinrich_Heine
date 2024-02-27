@@ -42,6 +42,14 @@ To run the Jupyter notebooks please do as followed:
 * It is necessary that you run the code cells in the correct order as the individual program parts build on each other. 
 
 ## Technologies/Sources
+* ChatGPT. (n.d.). https://chat.openai.com/
+* Code in Action. (2021, July 26). Mastering Transformers | 5. Fine-Tuning Language models for text Classification [Video]. YouTube. https://www.youtube.com/watch?v=rR0vHaEOV_k
+* German BERT | State of the art language model for German NLP. (n.d.). deepset.ai. https://www.deepset.ai/german-bert
+* Google Colaboratory. (n.d.). https://colab.research.google.com/
+* Leipzig Corpus. (n.d.). Universität Leipzig. https://wortschatz.uni-leipzig.de/de/download/German#mixed-typical
+* Project Gutenberg. (n.d.). Project Gutenberg. https://www.gutenberg.org/ebooks/results/
+* Rothman, D. (2022). Transformers for natural language processing: Build, train, and fine-tune deep neural network architectures for NLP with Python, Hugging Face, and OpenAI’s GPT-3, ChatGPT, and GPT-4. Packt Publishing Ltd.
+* Yıldırım, S., & Chenaghlu, M. A. (2021). Mastering transformers: Build state-of-the-art models from scratch with advanced natural language processing techniques. Packt Publishing Ltd.
 
 ## Licence
 We are not aware of any copyright restrictions of the material.
