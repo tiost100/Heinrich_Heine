@@ -46,6 +46,7 @@ To run the Jupyter notebooks please do as followed:
 * Code in Action. (2021, July 26). Mastering Transformers | 5. Fine-Tuning Language models for text Classification [Video]. YouTube. Retrieved February 27, 2024, from https://www.youtube.com/watch?v=rR0vHaEOV_k
 * German BERT | State of the art language model for German NLP. (n.d.). deepset.ai. Retrieved February 27, 2024, from https://www.deepset.ai/german-bert
 * Google Colaboratory. (n.d.). Retrieved February 27, 2024, from https://colab.research.google.com/
+* Jin, D., Jin, Z., Hu, Z., Vechtomova, O., & Mihalcea, R. (2020). Deep Learning for text Style Transfer: A survey. arXiv (Cornell University). https://doi.org/10.48550/arxiv.2011.00416
 * Project Gutenberg. (n.d.). Project Gutenberg. Retrieved February 27, 2024, from https://www.gutenberg.org/ebooks/results/
 * Rothman, D. (2022). Transformers for natural language processing: Build, train, and fine-tune deep neural network architectures for NLP with Python, Hugging Face, and OpenAI’s GPT-3, ChatGPT, and GPT-4. Packt Publishing Ltd.
 * Universität Leipzig. (n.d.). Leipzig Corpus. Retrieved February 27, 2024, from https://wortschatz.uni-leipzig.de/de/download/German#mixed-typical
