@@ -1,4 +1,4 @@
-# Heine oder nicht Heine? Das ist hier die Frage
+# Heine or not-Heine? That’s the question! - A text classifier
 
 ## Table of Contents
 1. [General Info](#general-info)
